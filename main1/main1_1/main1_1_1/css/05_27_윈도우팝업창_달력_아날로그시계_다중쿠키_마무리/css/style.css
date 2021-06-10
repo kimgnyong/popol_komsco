@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+#wrap {width:100%;}
+#wrap #header {z-index:3;width:100%;height:70px;position:fixed;top:0;left:0;background:rgba(255,255,255, .9);box-shadow:0 3px 6px rgba(0,0,0, .1);line-height:70px;color:#c99;font-size:30px;text-align:center;}
+#wrap #main   {z-index:1;width:100%;height:auto;position:relative;}
+#wrap #main #section01 {width:100%;height:969px;color:#fff;font-size:40px;text-align:center;background:url('../img/main_visual_bg.jpg');}
+#wrap #main #section01 .wrap {width:100%;height:100%;}
+#wrap #main #section01 .wrap .gap {margin:0;height:100%;}
+#wrap #main #section01 .wrap .gap .container {position:relative;width:100%;height:100%;}
+#wrap #main #section01 .wrap .gap .container .content {width:100%;max-width:1000px;margin:0 auto;height:100%;background:url(../img/main_visual.jpg) no-repeat 50% 0;background-size:cover;}
+#wrap #main #section01 .wrap .gap .container .content .timer-box {position:relative;top:70px;width:490px;height:490px;margin:0 auto;}
+#wrap #main #section01 .wrap .gap .container .content .timer-box .timer-img  {position:absolute;top:0;left:0;display:block;width:100%;}
+#wrap #main #section01 .wrap .gap .container .content .timer-box .timer-img img {width:100%;}
+#wrap #main #section01 .wrap .gap .container .content .timer-box .timer-img1 {z-index:1;display:block;}  /* 6시 40분 20초 */
+#wrap #main #section01 .wrap .gap .container .content .timer-box .date-box   {z-index:2;position:absolute;top:7%;left:0;width:100%;color:#333;font-size:21px;font-weight:700;font-family:'Times New Roman','Times','serif';text-align:center;}
+#wrap #main #section01 .wrap .gap .container .content .timer-box .timer-img2 {z-index:3;transform:rotate(180deg);} /* 시 : 1시간 : 30 도 오후 3시 */
+#wrap #main #section01 .wrap .gap .container .content .timer-box .timer-img3 {z-index:4;transform:rotate(240deg);} /* 분 : 1분 몇도 ? 6도 10분 */
+#wrap #main #section01 .wrap .gap .container .content .timer-box .timer-img4 {z-index:5;transform:rotate(120deg);} /* 초 1초 몇도 ? 6도 45초 */
+#wrap #main #section01 .wrap .gap .container .content .timer-box .timer-img5 {z-index:6;}
+
+/* 달력 */
+#wrap #main #section01 .wrap .gap .container .calendar {width:350px;position:absolute;top:130px;left:50px;line-height:100%;}
+#wrap #main #section01 .wrap .gap .container .calendar table {width:100%;}
+#wrap #main #section01 .wrap .gap .container .calendar table caption {font-size:20px;color:#ccc;letter-spacing:1px;word-spacing:5px;}
+#wrap #main #section01 .wrap .gap .container .calendar table th ,
+#wrap #main #section01 .wrap .gap .container .calendar table td {width:50px;height:50px;border:0px inset #000;text-align:center;font-size:16px;color:#ccc;cursor:default;transition:color .3s;}
+#wrap #main #section01 .wrap .gap .container .calendar table td:hover {background:#444;color:#fff;}
+#wrap #main #section01 .wrap .gap .container .calendar table td.color1 {color:#555;}
+#wrap #main #section01 .wrap .gap .container .calendar table td.now {color:#fff;background:#37c;outline:1px solid #37c;outline-offset:1px;}
+
+
+/* 버튼 */
+#wrap #main #section01 .wrap .gap .container .calendar .button-box {width:100%;padding:10px 0;}
+#wrap #main #section01 .wrap .gap .container .calendar .button-box button {width:70px;height:34px;background:#666;color:#fff;font-size:13px;cursor:pointer;border-radius:3px;transition:all .3s;}
+#wrap #main #section01 .wrap .gap .container .calendar .button-box button:hover {background:#888;color:#fff;font-size:13px;cursor:pointer;border-radius:3px;}
+#wrap #main #section01 .wrap .gap .container .calendar .button-box button.prev-btn {float:left;}
+#wrap #main #section01 .wrap .gap .container .calendar .button-box button.next-btn {float:right;}
+
+
+
+
+#wrap #footer {z-index:2;width:100%;height:400px;background:#333;position:relative;}
+
+
+
+/* 팝업창 스타일 */
+#popWrap {width:100%;height:100%;}
+#popWrap .gap {width:100%;height:100%;}
+#popWrap .gap .container {width:100%;height:100%;}
+#popWrap .gap .container .content {width:100%;height:100%;position:relative;background:#f0f0f0;}
+/* 내용스타일 */
+
+
+#popWrap .gap .container .content .button-box {position:absolute;bottom:30px;right:30px;}
+#popWrap .gap .container .content .button-box form span {display:inline-block;}
+#popWrap .gap .container .content .button-box form span input[type='radio'] {width:auto;}
+#popWrap .gap .container .content .button-box form span label {font-size:15px;margin-left:7px;}
+#popWrap .gap .container .content .button-box form button {padding:5px 15px;background:#000;color:#fff;font-size:15px;margin-left:10px;cursor:pointer;}
+
+
+
+
+
